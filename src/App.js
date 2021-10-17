@@ -1,26 +1,14 @@
-import Ex21 from './components/2.1-hello_world/ex2.1'
+import Ex31 from './components/3.1-boxes/box1'
+
+// import Ex22 from './components/2.2-basics_of_jsx/ex2.2'
 // import logo from './logo.svg';
 // import './App.css';
 
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-      <Ex21 /> 
-  
+      {/* <Ex22 />  */} 
+      <Ex31 />
     </div>
   );
 }

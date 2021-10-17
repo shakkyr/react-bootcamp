@@ -1,0 +1,36 @@
+.box1 {
+    background:turquoise ;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box2 {
+    
+    background:rgb(91, 124, 214) ;
+    width: 450px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box3 {
+    
+    background:pink ;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.box4 {
+    
+    background:palevioletred ;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+}
