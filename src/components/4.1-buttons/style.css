@@ -1,0 +1,9 @@
+.App {
+    display: flex;
+    flex-direction: row;
+      width: 500px;
+}
+
+input {
+    margin: 30px;
+}
