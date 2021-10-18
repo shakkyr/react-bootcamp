@@ -1,3 +1,6 @@
+import React from "react";
+import './style.css'
+
 class Showhide extends React.Component {
 	constructor(props) {
 		super(props);
@@ -21,10 +24,17 @@ class Showhide extends React.Component {
 		return (
 			<div>
 				<input type="button" value={this.state.showhide ? "show" : "hide"} onClick={this.shadi} />
-				<div className="asad" style={{ display: this.state.showhide ? 'none' : 'block' }} />
+				<div className="boxes" style={{ display: this.state.showhide ? 'none' : 'block' }} />
 			</div>
 		);
 	}
+
+    // <input type="button" value={this.state.showhide ? "hide" : "show"} onClick={this.shadi} />
+    // {/* <div className="asad" style={{ display: this.state.showhide ? 'none' : 'block' }} /> */}
+    // {this.state.showhide && <div className="asad" />} 
+   
+
+
 }
 
 export default Showhide;

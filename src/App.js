@@ -1,5 +1,6 @@
-import Counter from "./components/7.1-increment/Counter";
-// import Card from './components/4.2-cards/card'
+import Boxes from './components/7.2-hide_and_seek/Boxes'
+// import Counter from "./components/7.1-increment/Counter"; =====  7-1
+// import Card from './components/4.2-cards/card'  ===============  4-2
 // import Buttons from "./components/4.1-buttons/ex4.1";  ========  4-1
 // import Quiz from './components/3.2-quiz/Quiz'; ================= 3-2
 // import Ex31 from './components/3.1-boxes/box1'//================== 3-1 + 6-1
@@ -10,8 +11,8 @@ import Counter from "./components/7.1-increment/Counter";
 function App() {
   return (
     <div className="App">
-
-      <Counter />
+       <Boxes />
+      {/* <Counter /> */}
       {/* <Card num='1' title='childhood' description='inoccent childhood'/>
       <Card num='2' title='pretty baby' description='the baby in the red'/>
       <Card num='3' title='kids' description='inoccent childhood'/> */}
