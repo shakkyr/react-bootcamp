@@ -2,11 +2,11 @@ import React from "react";
 import './ex3.1.css'
 
 // const Box4 = () => {
-//   return <div className ='box4'>
+//   return <div className ='box4'>3-1
 //   </div>
 // }
 
-class Box4 extends React.Component {
+class Box4 extends React.Component {//6-1
   constructor(props){
     super(props);
   }
