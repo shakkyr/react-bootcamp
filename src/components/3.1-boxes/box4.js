@@ -1,9 +1,20 @@
 import React from "react";
 import './ex3.1.css'
 
-const Box1 = () => {
-  return <div className ='box4'>
-  </div>
+// const Box4 = () => {
+//   return <div className ='box4'>
+//   </div>
+// }
+
+class Box4 extends React.Component {
+  constructor(props){
+    super(props);
+  }
+  render(){
+    return <div className='box4'>
+
+    </div>
+  }
 }
 
-export default Box1;
+export default Box4;
