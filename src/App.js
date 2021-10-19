@@ -1,4 +1,10 @@
-import Boxes from './components/7.2-hide_and_seek/Boxes'
+
+import Myjoke from './components/12.1-chuck_norris/ChuckNoriis'
+// import Spinner from "./components/9.1-spinner/Spinner";
+// import ChangingBoxes from './components/8.3-changing_box/ChangingBoxes'
+// import BoxAnimation from './components/8.2-box_animations/BoxAnimation'=====8-2
+// import Cycle from "./components/8.1-life-cycle-methods/LifeCycleMethos"; ===8-1
+// import Boxes from './components/7.2-hide_and_seek/Boxes' // ====== 7-2
 // import Counter from "./components/7.1-increment/Counter"; =====  7-1
 // import Card from './components/4.2-cards/card'  ===============  4-2
 // import Buttons from "./components/4.1-buttons/ex4.1";  ========  4-1
@@ -11,7 +17,14 @@ import Boxes from './components/7.2-hide_and_seek/Boxes'
 function App() {
   return (
     <div className="App">
-       <Boxes />
+     <Myjoke />
+    {/* <Spinner /> */}
+    {/* <ChangingBoxes width='150px 'height='150px 'background='yellow' /> */}
+    {/* <BoxAnimation width='150px 'height='150px 'background='yellow'/>
+    <BoxAnimation width='50px 'height='50px 'background='blue'/>
+    <BoxAnimation width='100px 'height='100px 'background='green'/> */}
+    {/* <Cycle /> */}
+       {/* <Boxes /> */}
       {/* <Counter /> */}
       {/* <Card num='1' title='childhood' description='inoccent childhood'/>
       <Card num='2' title='pretty baby' description='the baby in the red'/>
@@ -24,5 +37,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
