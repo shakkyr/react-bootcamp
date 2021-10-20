@@ -1,4 +1,5 @@
 import React from "react";
+import './ChuckNoriis.css'
 
 class Myjoke extends React.Component {
     constructor (props) {
@@ -16,29 +17,27 @@ class Myjoke extends React.Component {
         let joke =await (await fetch(`https://api.chucknorris.io/jokes/random`)).json();
        
         this.setState ({
-        norris : joke,
+        norris : joke
         
         
         })
 
     }
 
-    myjoke2 = async () => {
-        let categ =await (await fetch(`https://api.chucknorris.io/jokes/categories`)).json();
-        let selected =await (await fetch(`https://api.chucknorris.io/jokes/random?category={category}`)).json();
-        this.setState({
+    // myjoke2 = async () => {
+    //     let categ =await (await fetch(`https://api.chucknorris.io/jokes/categories`)).json();
+    //     let selected =await (await fetch(`https://api.chucknorris.io/jokes/random?category={category}`)).json();
+    //     this.setState({
 
-        })
-    }
+    //     })
+    // }
     render () {
-       console.log(this.setState);
-        
         return (
             <div>
             <div>
             <input type="button" value="click for a random chuck norris joke" onClick={this.myjoke} />
             </div>
-            <div>{this.state.norris.value}</div>
+            <div><h2>{this.state.norris.value}</h2></div>
             </div>)
 }}
 export default Myjoke;
