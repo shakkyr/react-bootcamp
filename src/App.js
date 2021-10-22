@@ -1,5 +1,7 @@
-import Parent from "./components/11.1-child_to_father_colors/Parent";
 
+
+import CheckBox from "./components/11.2-checkbox/CheckBox";
+// import Parent from "./components/11.1-child_to_father_colors/Parent";======11-1
 // import Task2 from "./components/ExternalCourse/Task2/Greetings";
 // import Task1 from "./components/ExternalCourse/task1/task1";
 // import Myjoke from './components/12.1-chuck_norris/ChuckNoriis'============12-1
@@ -20,9 +22,8 @@ import Parent from "./components/11.1-child_to_father_colors/Parent";
 function App() {
   return (
     <div className="App">
-
-    <Parent />
-
+   <CheckBox />
+    {/* <Parent /> */}
     {/* <Task1 /> */}
     {/* <Task2 isLoged={true}/> */}
      {/* <Myjoke /> */}
