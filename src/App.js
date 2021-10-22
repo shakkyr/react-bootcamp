@@ -1,4 +1,6 @@
-import Task2 from "./components/ExternalCourse/Task2/Greetings";
+import Parent from "./components/11.1-child_to_father_colors/Parent";
+
+// import Task2 from "./components/ExternalCourse/Task2/Greetings";
 // import Task1 from "./components/ExternalCourse/task1/task1";
 // import Myjoke from './components/12.1-chuck_norris/ChuckNoriis'============12-1
 // import Spinner from "./components/9.1-spinner/Spinner";=====================9-1
@@ -19,9 +21,10 @@ function App() {
   return (
     <div className="App">
 
+    <Parent />
+
     {/* <Task1 /> */}
-    <Task2 isLoged={true}/>
-    
+    {/* <Task2 isLoged={true}/> */}
      {/* <Myjoke /> */}
     {/* <Spinner /> */}
     {/* <ChangingBoxes width='150px 'height='150px 'background='yellow' /> */}
