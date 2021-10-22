@@ -8,25 +8,34 @@ class CheckBox extends React.Component{
 
     this.state = {
         terms : [
-        {id:1 , data: 'I read the terms of the app' , status:''},
-        {id:2 , data: 'I accept the terms of the app', status:''},
-        {id:3 , data: 'I want to get the weekly news later', status:"checked"},
-        {id:4 , data: 'I want to get sales and offers', status:"checked"}
+        {id:1 , data: 'I read the terms of the app' , status:false},
+        {id:2 , data: 'I accept the terms of the app', status:false},
+        {id:3 , data: 'I want to get the weekly news later', status:true},
+        {id:4 , data: 'I want to get sales and offers', status:true}
         ]
     }
     }
 
 
-    componentDidMount (){
-        
-    }
+  
     
     checkHandler = (e)=>{
-        this.setState({
-         status:e.target.checked
-        })
-    }
+        let myTerms = this.state.terms;
 
+        myTerms.map((term,index) =>{
+            if (index === e){
+                if (term.status == false){
+                term.status = true;
+                return this.setState({status: true})
+                }else {
+                    term.status = false;
+                    return this.setState({status: false})
+                }
+            }
+            
+        })
+
+    }
     render() {
         let myTerms = this.state.terms;
         return (
@@ -35,7 +44,7 @@ class CheckBox extends React.Component{
                  {myTerms.map((term,index) => {
                     return (
                         <li key={term.id} style={{listStyle:'none'}} >
-                        <input type='checkbox' checked={term.status} onChange={this.checkHandler}/>{term.data}
+                        <input type='checkbox' checked={term.status} onChange={()=>{this.checkHandler(index)}}/>{term.data}
                         </li>
                     )
                 })}
