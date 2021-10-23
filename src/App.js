@@ -1,6 +1,7 @@
-
-
-import CheckBox from "./components/11.2-checkbox/CheckBox";
+// import TicTacToe from "./components/Tic1/TicTacToe";
+// import MyApp from './components/TicTacToe//MyApp'
+import Form from "./components/11.3-formreview/Form";
+// import CheckBox from "./components/11.2-checkbox/CheckBox";================11-2
 // import Parent from "./components/11.1-child_to_father_colors/Parent";======11-1
 // import Task2 from "./components/ExternalCourse/Task2/Greetings";
 // import Task1 from "./components/ExternalCourse/task1/task1";
@@ -22,7 +23,9 @@ import CheckBox from "./components/11.2-checkbox/CheckBox";
 function App() {
   return (
     <div className="App">
-   <CheckBox />
+      {/* <TicTacToe/> */}
+   <Form />
+   {/* <CheckBox /> */}
     {/* <Parent /> */}
     {/* <Task1 /> */}
     {/* <Task2 isLoged={true}/> */}
