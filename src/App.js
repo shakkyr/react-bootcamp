@@ -1,7 +1,8 @@
 
+import FetchStarWars from "./components/19.1-simple fetch/simplefetch";
 
-import ToDo from "./components/18.2-simple todo/ToDo";
-// import CheckBoxes from "./components/18.4-marking and deleting/Cheks";======18-4
+// import CheckBoxes from "./components/18.4-marking and deleting/Cheks";======19-1
+// import ToDo from "./components/18.2-simple todo/ToDo"; =====================18-2
 // import TexTask from "./components/18.1-text/text";==========================18-1
 // import Avatar from './components/13.2-avatarAssignment/Avatars'=============13-2
 // import Parent from "./components/13.1-data_massagingAssignment/parent";=====13-1
@@ -32,10 +33,11 @@ function App() {
   return (
     <div className="App">
 
-    <ToDo />
 
-{/* <TexTask /> */}
+<FetchStarWars />
 {/* <CheckBoxes /> */}
+    {/* <ToDo /> */}
+{/* <TexTask /> */}
     {/* <Avatar /> */}
     {/* <Parent /> */}
       {/* <TicTacToe/> */}

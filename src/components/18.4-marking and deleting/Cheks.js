@@ -1,24 +1,21 @@
 import React, {useState} from 'react'
+import Clicks from './inputs'
 
 
-
-const arr= ["one", "two", "three", "four", "five"];
 
 const CheckBoxes = ()=> {
 
-    const [boxes, setBoxes] = useState([])
+    const [boxes, setBoxes] = useState(
+        ["one", "two", "three", "four", "five"]
+    )
 
-    const assignColorToCheckBoxes = arr.map(ele=> {
+    const assignColorToCheckBoxes = boxes.map(ele=> {
         return (
             <div>
-                <li>
-             <input type="checkbox"
-                    // checked={checked}
-                    // onChange={handleChange}
-                    />
-            
-              <label>{ele}</label>
-               </li>
+                
+                <Clicks label={ele} />
+              
+               
             
 
             </div>
@@ -26,6 +23,8 @@ const CheckBoxes = ()=> {
     })
     return (
         <div>{assignColorToCheckBoxes}</div>
+           
+    
         )
 }
 
