@@ -1,6 +1,6 @@
 
-import FetchStarWars from "./components/19.1-simple fetch/simplefetch";
-
+import Apicall from "./components/19.2-countries of the world/countries";
+// import FetchStarWars from "./components/19.1-simple fetch/simplefetch";=====19-2
 // import CheckBoxes from "./components/18.4-marking and deleting/Cheks";======19-1
 // import ToDo from "./components/18.2-simple todo/ToDo"; =====================18-2
 // import TexTask from "./components/18.1-text/text";==========================18-1
@@ -33,8 +33,8 @@ function App() {
   return (
     <div className="App">
 
-
-<FetchStarWars />
+  <Apicall />
+{/* <FetchStarWars /> */}
 {/* <CheckBoxes /> */}
     {/* <ToDo /> */}
 {/* <TexTask /> */}
