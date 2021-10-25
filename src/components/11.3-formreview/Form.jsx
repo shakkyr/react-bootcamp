@@ -141,3 +141,87 @@ export default Form;
 //         )
 
 // }
+
+// import React from 'react';   =============== parent
+// import FormFill from "./FormFill";
+
+// class Forms extends React.Component{
+//     constructor(props) {
+//         super(props);
+//         this.state = {
+//             formData : ''
+//         }
+//     }
+
+//     finish = (data)=>{
+//         this.setState({formData : data})
+//     }
+
+//     render() {
+//         return <div>
+
+//             {
+//                 this.state.formData ? <div>
+//                     first  : {this.state.formData.firstName}
+//                     last  : {this.state.formData.lastName}
+//                 </div> :  <FormFill finishForm={this.finish}/>
+//             }
+//         </div>
+//     }
+
+// }
+
+// export default Forms;
+
+
+// import React from 'react'; =============== child
+
+// class FormFill extends React.Component {
+//     constructor(props) {
+//         super(props);
+//         this.state = {
+//             firstName: "",
+//             lastName: "",
+//             ageDrop :"",
+//             freeText :""
+//         }
+//     }
+
+//     handelText = (e) => {
+//         this.setState({
+//             [e.target.name]: e.target.value
+//         })
+//     }
+
+//     formConfrim= (e)=>{
+//         e.preventDefault()
+//         this.props.finishForm(this.state)
+//     }
+
+
+
+//     render() {
+//         return <div>
+//             <form onSubmit={this.formConfrim}>
+//                 first Name : <input type={'text'} value={this.state.firstName} name={'firstName'}
+//                                     onChange={this.handelText}/><br/>
+//                 last Name : <input type={'text'} value={this.state.lastName} name={'lastName'}
+//                                    onChange={this.handelText}/><br/>
+
+//                 age : <select name={"ageDrop"} onChange={this.handelText}>
+//                 <option>-=select one=-</option>
+//                 <option>0-15</option>
+//                 <option>16-40</option>
+//                 <option>over 40</option>
+//             </select><br/>
+
+//                 <textarea rows={10} name={"freeText"} value={this.state.freeText}  onChange={this.handelText}></textarea>
+//                 <input type={'submit'} value={"submit"} />
+//             </form>
+
+//         </div>
+//     }
+
+// }
+
+// export default FormFill;

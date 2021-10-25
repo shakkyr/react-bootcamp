@@ -1,6 +1,10 @@
+
+
+import Avatar from './components/13.2-avatarAssignment/Avatars'
+// import Parent from "./components/13.1-data_massagingAssignment/parent";
 // import TicTacToe from "./components/Tic1/TicTacToe";
 // import MyApp from './components/TicTacToe//MyApp'
-import Form from "./components/11.3-formreview/Form";
+// import Form from "./components/11.3-formreview/Form";
 // import CheckBox from "./components/11.2-checkbox/CheckBox";================11-2
 // import Parent from "./components/11.1-child_to_father_colors/Parent";======11-1
 // import Task2 from "./components/ExternalCourse/Task2/Greetings";
@@ -23,8 +27,11 @@ import Form from "./components/11.3-formreview/Form";
 function App() {
   return (
     <div className="App">
+
+    <Avatar />
+    {/* <Parent /> */}
       {/* <TicTacToe/> */}
-   <Form />
+   {/* <Form /> */}
    {/* <CheckBox /> */}
     {/* <Parent /> */}
     {/* <Task1 /> */}
