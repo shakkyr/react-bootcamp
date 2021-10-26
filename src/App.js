@@ -1,8 +1,9 @@
-
-import Alogolia from "./components/19.3-algolia api/Alogolia API";
+import Crud from "./components/17.1-crud_mini_project/crude";
+// import MyApp from "./components/youtube-bootstrap/boot";
+// import Alogolia from "./components/19.3-algolia api/Alogolia API";==========19-3
 // import Apicall from "./components/19.2-countries of the world/countries"; ==19-2
 // import FetchStarWars from "./components/19.1-simple fetch/simplefetch";=====19-1
-// import CheckBoxes from "./components/18.4-marking and deleting/Cheks";======19-4
+// import CheckBoxes from "./components/18.4-marking and deleting/Cheks";
 // import ToDo from "./components/18.2-simple todo/ToDo"; =====================18-2
 // import TexTask from "./components/18.1-text/text";==========================18-1
 // import Avatar from './components/13.2-avatarAssignment/Avatars'=============13-2
@@ -30,12 +31,15 @@ import Alogolia from "./components/19.3-algolia api/Alogolia API";
 // import './App.css';
 
 
+
 function App() {
   return (
     <div className="App">
 
 
-<Alogolia />
+<Crud />
+{/* <MyApp /> */}
+{/* <Alogolia /> */}
   {/* <Apicall /> */}
 {/* <FetchStarWars /> */}
 {/* <CheckBoxes /> */}

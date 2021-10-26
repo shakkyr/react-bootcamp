@@ -4,13 +4,13 @@ const Clicks = (checked,handleChange,label)=> {
 
 
    return (
-      <div>
-          <li><input type='checkbox'
-           checked={checked}
-           onChange={handleChange}
-           label ={label}
-            /> </li>
-      </div>
+      
+      <input type='checkbox'
+            checked={checked}
+            onChange={handleChange}
+            label ={label}
+      /> 
+
       )
 
 }

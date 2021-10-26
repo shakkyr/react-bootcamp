@@ -13,7 +13,7 @@ const CheckBoxes = ()=> {
         return (
             <div>
                 
-                <Clicks label={ele} />
+                <Clicks label={ele} />{ele}
               
                
             
